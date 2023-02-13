@@ -34,7 +34,7 @@ if ( isset($usuario) && isset($password)){
 
                  if ( $query && mysqli_num_rows($query) >= 1){
                      echo("Se ha encontrado el usuario");
-                     header('Location: ../Vista/inicio.php');
+                     header('Location: ../Vista/inicio.html');
                      
                  } else {
                      echo "<h3 style=' color: white; padding: 5px; background-color: red;',color: black;'>No se ha encontrado el usuario</h3>";
