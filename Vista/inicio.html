@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilosInicio.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilosInicio.css"/>
     <link rel="stylesheet" href="../fontawesome/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -19,21 +19,34 @@
 <div class="lateral">
 
 <ul>
-<li><i class="fa-solid fa-house iconos"></i></i>Inicio</li>
-<li><i class="fa-sharp fa-solid fa-cart-shopping iconos"></i>Productos</li>
-<li><i class="fa-solid fa-user iconos"></i>Clientes</li>
-<li><i class="fa-solid fa-users-viewfinder iconos"></i>Proveedores</li>
-<li><i class="fa-solid fa-gear iconos"></i>Configuración</li>
-<li><i class="fa-solid fa-right-from-bracket iconos"></i>Cerrar Sesión</li>
+<li style="margin-top: 10px;"><button onclick="pulsadoBotonInicio()" class="botonAccion"><i class="fa-solid fa-house iconos"></i></i>Inicio</button></li>
+<li><button class="botonAccion"><i class="fa-sharp fa-solid fa-cart-shopping iconos"></i>Productos</button></li>
+<li><button class="botonAccion"><i class="fa-solid fa-user iconos"></i>Clientes</button></li>
+<li><button class="botonAccion"><i class="fa-solid fa-users-viewfinder iconos"></i>Proveedores</button></li>
+<li><button class="botonAccion"><i class="fa-solid fa-gear iconos"></i>Configuración</button></li>
+<li><button class="botonAccion"><i class="fa-solid fa-right-from-bracket iconos"></i>Cerrar Sesión</button></li>
 </ul>
 
 </div>
-<div class="panelContenido"></div>
+<!-- Parte derecha donde iremos cambiando la vista -->
+<div class="panelContenido">
+    <div id="interiorContent" class="interiorContent">
+        <h2 class="titContent">Bievenido a tu centro</h2>
+    </div>
+
+</div>
 
 </div>
 
 
 
-
+<script src="cargadorinterfaces.js"></script>
 </body>
+
+<footer>
+    <div class="footerdiseño">
+
+        <p class="textoFooter">CopyRight @ 2023</p>
+    </div>
+</footer>
 </html>
