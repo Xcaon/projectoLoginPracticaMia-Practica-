@@ -47,8 +47,35 @@ if ( isset($usuario) && isset($password)){
     return 1;
 }
 
+$db->close();
 
- }
+ } // Fin validar
+
+function listarProductos(){
+
+    $db = crearBaseDeDatos();
+
+    if ($db){
+
+        if ( mysqli_connect_error()){
+            echo "Hubo un error con la conexion a la base de datos";
+        } else {
+            $consultaSQL = "SELECT * FROM productos";
+            $query = mysqli_query($db, $consultaSQL);
+
+            if ( $query && mysqli_num_rows($query) >=1 ){
+                return $query;
+            } else {
+                echo "No hay productos que mostrar";
+            }
+
+        }
+
+    }
+
+    $db->close();
+}
+
 
 
 
