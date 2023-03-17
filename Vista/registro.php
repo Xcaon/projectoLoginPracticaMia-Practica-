@@ -23,16 +23,15 @@
 <div class="padre">
     <div class="contenedorLogin">
         <img class="logo" src="imagenes/imagen.png" width="100" height="100">
-        <h1>Iniciar Sesión</h1>
+        <h1>Registrate</h1>
         <form action="login.php" method="POST">
             <label class="labelLogin" aria-placeholder="Introduce tu nombre de usuario.." for="usuario">Usuario</label>
             <input class="inputsEntrada" type="text" name="usuario">
             <label class="labelLogin" for="password">Contraseña</label>
             <input class="inputsEntrada" type="password" name="password">
-            <a href="registro.php">¿No tienes cuenta? Registrate aquí</a>
-            <input class="login" type="submit" value="Login">
+            <input class="login" type="submit" value="Registrarme">
             <?php if ( $formulario_activado ):  ?>
-                <?php validar($usuario, $password) ?>
+                <?php registrar($usuario, $password) ?>
                 <?php endif; ?>
 
         </form>
