@@ -1,4 +1,6 @@
-
+:root {
+    --padding: 3%;
+}
 html, 
 body {
     height: 100%;
@@ -50,7 +52,7 @@ body {
 }
 
 .interiorContent {
-    padding: 3%;
+    padding: 2%;
     min-height: 100%;
     border: 1px dotted black;
 
@@ -139,4 +141,100 @@ img {
     font-size: 24px;
     text-align: left;
     padding: 1%;
+}
+
+.botonMenuProductos {
+    font-family: 'Roboto', sans-serif;
+    min-height: 50px;
+    width: 40%;
+    margin-right: 5px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 20px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.botonMenuProductos:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(7px);
+    cursor: pointer;
+}
+
+.botonizquierda {
+    float: left;
+}
+
+.botonderecha {
+    float: right;
+}
+
+.menuSuperiorProductos {
+    padding: var(--padding);
+    display: block;
+}
+
+.espacioSubirProducto{
+    min-height: 130px;
+    height: auto;
+    margin-top: 4px;
+    padding: var(--padding);
+    -webkit-box-shadow: 2px 2px 5px 3px rgba(204,204,204,1);
+-moz-box-shadow: 2px 2px 5px 3px rgba(204,204,204,1);
+box-shadow: 2px 2px 5px 3px rgba(204,204,204,1);
+}
+
+.inputNombre {
+    height: 50px;
+    width: 33%;
+}
+
+.inputDescripcion {
+    height: 50px;
+    width: 33%;
+}
+
+.inputfecha {
+    height: 50px;
+    width: 33%;
+}
+
+.botonCompletarSubida {
+    margin-top: 6px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 50px;
+    width: 30%;
+    margin-right: 5px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 20px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    float: right;
+}
+
+.listadoProductos {
+    padding: 10px;
+    margin-top: 10px;
+    height: auto;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.elementoProducto {
+    padding: 8px;
+    background-color: azure;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    min-height: auto;
+
 }
